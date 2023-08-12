@@ -1,0 +1,164 @@
+.footer {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+    url('../images/gradient-footer/bg-pic-xxs.png') no-repeat center bottom/ contain,
+    url('../images/gradient-footer/bg-xxs.png') no-repeat center bottom/ cover;
+
+  padding: 48px 0 14px;
+
+  @media screen and (min-width: $screen-xs) {
+    padding: 64px 0 14px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 90px 0 14px;
+  }
+
+  // bg
+  @media screen and (min-width: $screen-xs) {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+      url('../images/gradient-footer/bg-pic-xs.png') no-repeat center bottom/ contain,
+      url('../images/gradient-footer/bg-xs.png') no-repeat center bottom/ cover;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+      url('../images/gradient-footer/bg-pic-sm.png') no-repeat center bottom/ contain,
+      url('../images/gradient-footer/bg-sm.png') no-repeat center bottom/ cover;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+      url('../images/gradient-footer/bg-pic-md.png') no-repeat center bottom/ contain,
+      url('../images/gradient-footer/bg-md.png') no-repeat center bottom/ cover;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent),
+      url('../images/gradient-footer/bg-pic-lg.png') no-repeat center bottom/ cover,
+      url('../images/gradient-footer/bg-lg.png') no-repeat center bottom/ cover;
+  }
+}
+
+.footer__wrap--top {
+  @include useFlex(flex);
+  font-size: 14px;
+  line-height: $line-heigth-normal;
+
+  opacity: 0.8;
+
+  @media screen and (max-width: 767px) {
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-sm;
+  }
+}
+
+.meta {
+  @media screen and (min-width: $screen-sm) {
+    display: flex;
+    gap: 22px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    gap: 110px;
+  }
+}
+
+.contacts {
+  @media screen and (min-width: $screen-sm) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $screen-xs) and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.meta__list {
+  @media screen and (min-width: $screen-sm) {
+    width: 195px;
+  }
+}
+
+.meta__list,
+.contacts__wrap-link {
+  @include useFlex(flex);
+  gap: 8px;
+  flex-direction: column;
+
+  @media screen and (min-width: $screen-xl) {
+    gap: 10px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 18px;
+  font-weight: $lg-weight;
+  font-size: 16px;
+  line-height: $line-heigth-normal;
+  opacity: 1;
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-md;
+    margin-bottom: 20px;
+  }
+}
+
+.support {
+  @media screen and (max-width: 374px) {
+    margin-top: 16px;
+  }
+  margin-top: 32px;
+
+  @media screen and (min-width: $screen-xs) and (max-width: 767px) {
+    margin-top: 45px;
+  }
+}
+
+.support__title {
+  margin-bottom: 8px;
+}
+
+.footer__wrap--bottom {
+  padding-top: 32px;
+}
+
+.payment {
+  @include useFlex(flex, center, space-evenly);
+  flex-wrap: wrap;
+  gap: 20px 0;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $screen-xs) {
+    gap: 25px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    justify-content: start;
+    gap: 17px;
+  }
+}
+
+.payment__item {
+  width: 82px;
+}
+
+.number {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  opacity: 0.8;
+}
+
+.number__text {
+  font-size: 11px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
