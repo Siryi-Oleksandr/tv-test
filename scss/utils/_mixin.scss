@@ -1,0 +1,30 @@
+@mixin useFlex($type, $align: stretch, $justify: start) {
+  display: $type;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin transparent-button(
+  $pad-vertical,
+  $pad-horizontal,
+  $weight,
+  $fz,
+  $line-height: $line-heigth-normal
+) {
+  display: inline-block;
+  padding: $pad-vertical $pad-horizontal;
+
+  font-weight: $weight;
+  font-size: $fz;
+  line-height: $line-height;
+
+  color: $secondary-color;
+
+  background: none;
+  border: 2px solid $secondary-color;
+  border-radius: $base-radius;
+
+  cursor: pointer;
+
+  transition: all $animation;
+}

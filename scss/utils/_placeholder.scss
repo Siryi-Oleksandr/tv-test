@@ -1,0 +1,238 @@
+// btns
+%primary-btn {
+  display: inline-block;
+  padding: 14px;
+  width: 100%;
+
+  font-weight: $lg-weight;
+  font-size: $font-xs;
+  line-height: $line-heigth-normal;
+
+  color: $secondary-color;
+
+  background: $primary-color;
+  border: none;
+  border-radius: $base-radius;
+
+  transition: background-color $animation;
+
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    padding: 16px 24px;
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: auto;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 16px 28px;
+    font-size: $font-sm;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 18px 32px;
+    font-size: $font-md;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 24px 40px;
+    font-size: $font-xl;
+  }
+}
+
+%form-btn {
+  display: block;
+  padding: 16px 0;
+  width: 100%;
+
+  font-weight: $lg-weight;
+  font-size: $font-xs;
+  line-height: calc(18 / 15);
+
+  color: $secondary-color;
+
+  background-color: $primary-color;
+  border: transparent;
+
+  border-radius: $base-radius;
+
+  transition: background-color $animation;
+
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    display: inline-block;
+    width: auto;
+    height: 53px;
+    padding: 0 32px;
+
+    font-weight: $md-weight;
+    font-size: 17px;
+    white-space: nowrap;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 0 40px;
+    font-size: $font-sm;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    height: 56px;
+    font-size: $font-md;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 0 50px;
+    height: 69px;
+    font-size: $font-lg;
+  }
+}
+
+// titles
+%hero-title {
+  font-weight: $hero-title-xxs;
+  font-size: $font-lg;
+  line-height: $line-heigth-small;
+
+  text-align: center;
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: $hero-title-xs;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    font-size: $hero-title-sm;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    font-size: $hero-title-md;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $hero-title-lg;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $hero-title-xl;
+  }
+}
+
+%section-title {
+  font-weight: $section-title-xxs;
+  font-size: $font-lg;
+  opacity: 0.9;
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: $section-title-xs;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    font-size: $section-title-sm;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    font-size: $section-title-md;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $section-title-lg;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $section-title-xl;
+  }
+}
+// text of section
+%section-text {
+  font-size: $font-xs;
+  line-height: $line-heigth-big;
+  opacity: 0.7;
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-md;
+  }
+}
+
+// chanel-cards
+%chanel-card {
+  & {
+    @include useFlex(flex, center, center);
+    width: calc((100% - 2 * 17px) / 3);
+    height: 57px;
+
+    border: 1px solid #c6c6c8;
+    border-radius: $base-radius;
+
+    @media screen and (min-width: $screen-xs) {
+      border-radius: $big-radius;
+      height: 70px;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      width: calc((100% - 3 * 24px) / 4);
+      height: 105px;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      width: calc((100% - 4 * 24px) / 5);
+      height: 108px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: calc((100% - 4 * 49px) / 5);
+      height: 122px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      width: calc((100% - 4 * 70px) / 5);
+      height: 162px;
+      border-radius: 10px;
+    }
+  }
+
+  &.sm-visible {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &.md-visible {
+    @media screen and (max-width: 989px) {
+      display: none;
+    }
+  }
+
+  &.channels__item--red {
+    background: linear-gradient(180deg, #ff6961 0%, #d70015 100%);
+  }
+
+  &.channels__item--blue {
+    background: linear-gradient(180deg, #409cff 0%, #0040dd 100%);
+  }
+
+  &.channels__item--green {
+    background: linear-gradient(180deg, #30db5b 0%, #248a3d 100%);
+  }
+
+  &.channels__item--violet {
+    background: linear-gradient(180deg, #7d7aff 0%, #3634a3 100%);
+  }
+
+  &.channels__item--orange {
+    background: linear-gradient(180deg, #ffd426 0%, #b25000 100%);
+  }
+}
