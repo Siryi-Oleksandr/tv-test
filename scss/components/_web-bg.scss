@@ -1,37 +1,18 @@
-.web__bg {
-  background-image: url('../images/hero/bg/pic-hero-xs.png'),
-    url('../images/hero/bg/gr-hero-xs.png');
+.web-bg {
+  background-image: url('../images/web-bg/pic-web-xs.png'), url('../images/web-bg/gr-web-sm.png');
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, center center;
+  background-position: left center, center center;
 
   @media screen and (min-width: $screen-xs) {
-    background-image: url('../images/hero/bg/pic-hero-sm.png'),
-      url('../images/hero/bg/gr-hero-sm.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center center;
+    background-image: url('../images/web-bg/pic-web-xs.png'), url('../images/web-bg/gr-web-sm.png');
   }
   @media screen and (min-width: $screen-sm) {
-    background-image: url('../images/hero/bg/pic-hero-md.png'),
-      url('../images/hero/bg/gr-hero-md.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center center;
+    background-image: url('../images/web-bg/web_gradient_md.png');
   }
   @media screen and (min-width: $screen-md) {
-    background-image: url('../images/hero/bg/pic-hero-lg.png'),
-      url('../images/hero/bg/gr-hero-lg.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center center;
+    background-image: url('../images/web-bg/web_gradient_lg.png');
   }
   @media screen and (min-width: $screen-lg) {
-    background-image: url('../images/hero/bg/pic-hero-xl.png'),
-      url('../images/hero/bg/gr-hero-xl.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center center;
-  }
-  @media screen and (min-width: $screen-xl) {
-    background-image: url('../images/hero/bg/pic-hero-xl.png'),
-      url('../images/hero/bg/gr-hero-xl.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center center;
+    background-image: url('../images/web-bg/web_gradient_xl.png');
   }
 }

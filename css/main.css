@@ -642,6 +642,32 @@ footer {
   }
 }
 
+.web-bg {
+  background-image: url("../images/web-bg/pic-web-xs.png"), url("../images/web-bg/gr-web-sm.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, center center;
+}
+@media screen and (min-width: 375px) {
+  .web-bg {
+    background-image: url("../images/web-bg/pic-web-xs.png"), url("../images/web-bg/gr-web-sm.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .web-bg {
+    background-image: url("../images/web-bg/web_gradient_md.png");
+  }
+}
+@media screen and (min-width: 990px) {
+  .web-bg {
+    background-image: url("../images/web-bg/web_gradient_lg.png");
+  }
+}
+@media screen and (min-width: 1440px) {
+  .web-bg {
+    background-image: url("../images/web-bg/web_gradient_xl.png");
+  }
+}
+
 .header {
   padding: 16px 0 14px;
 }
@@ -1060,7 +1086,6 @@ footer {
 
 .conection {
   padding: 54px 0 33px;
-  background-color: #141517;
 }
 @media screen and (min-width: 768px) {
   .conection {
