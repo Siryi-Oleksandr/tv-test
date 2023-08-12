@@ -1,0 +1,225 @@
+.tv-channels {
+  padding: 50px 0 16px;
+
+  @media screen and (min-width: $screen-xs) {
+    padding: 50px 0 24px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    padding: 67px 0 24px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 67px 0 32px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 65px 0 57px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 80px 0 84px;
+  }
+}
+
+.tv-channels__title {
+  @extend %section-title;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -80%;
+    left: 75%;
+
+    width: 40px;
+    height: 40px;
+
+    background: url('../images/tickets.svg') no-repeat center center;
+
+    @media screen and (min-width: $screen-sm) {
+      top: -80%;
+      left: 28%;
+
+      width: 48px;
+      height: 48px;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: -50%;
+      left: 25%;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: -30%;
+      left: 22%;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    text-align: left;
+  }
+}
+.channels {
+  @include useFlex(flex);
+  flex-wrap: wrap;
+  gap: 17px;
+
+  @media screen and (min-width: $screen-sm) {
+    gap: 24px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    gap: 49px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    gap: 70px;
+  }
+}
+
+.channels__item {
+  @extend %chanel-card;
+}
+
+.channels__img {
+  width: 62px;
+
+  @media screen and (min-width: $screen-xs) {
+    width: 74px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: 112px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 117px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 131px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 174px;
+  }
+}
+
+.tv-channels__text {
+  @extend %section-text;
+
+  margin-top: 8px;
+  text-align: center;
+
+  @media screen and (min-width: $screen-xs) {
+    margin-top: 13px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    margin-top: 16px;
+    text-align: left;
+    width: 510px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    margin-top: 20px;
+    width: 526px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 16px;
+    width: 626px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    margin-top: 20px;
+    width: 840px;
+  }
+}
+
+// group of buttons
+.buttons-chanel {
+  display: flex;
+  gap: 8px;
+
+  margin: 24px 0;
+  overflow: auto;
+
+  @media screen and (min-width: $screen-xs) {
+    gap: 16px;
+    margin: 32px 0 24px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    gap: 24px;
+    margin: 33px 0 41px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    gap: 12px;
+    margin: 34px 0 40px;
+    overflow: visible;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    justify-content: space-between;
+    margin: 50px 0 52px;
+  }
+}
+
+.buttons-chanel__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.buttons-chanel__text {
+  @include transparent-button(8px, 16px, $sm-weight, 16px, $line-heigth-big);
+
+  @media screen and (min-width: $screen-sm) {
+    @include transparent-button(12px, 18px, $sm-weight, 16px, $line-heigth-big);
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    @include transparent-button(16px, 24px, $sm-weight, 20px, $line-heigth-big);
+  }
+
+  .buttons-chanel__input:checked + &,
+  .buttons-chanel__input:hover + & {
+    background-color: $primary-color-hover;
+  }
+}
+
+.btn-more {
+  @include transparent-button(0, 0, $lg-weight, 16px);
+  @include useFlex(flex, center);
+  gap: 8px;
+  margin-top: 18px;
+
+  border: transparent;
+  border: none;
+  stroke: $accent-color;
+  text-transform: uppercase;
+  margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+
+  &__icon {
+    stroke: inherit;
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: $font-sm;
+  }
+}

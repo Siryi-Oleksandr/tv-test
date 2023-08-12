@@ -1,0 +1,351 @@
+.conection {
+  padding: 54px 0 33px;
+  background-color: $body-bg;
+
+  @media screen and (min-width: $screen-sm) {
+    padding: 76px 0 50px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 92px 0 56px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 122px 0 81px;
+  }
+}
+
+// wraps
+.form-wrap {
+  position: relative;
+  text-align: center;
+
+  padding: 50px 16px 32px 16px;
+  border: 2px solid $form-border;
+  border-radius: $big-radius;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+
+    width: 64px;
+    height: 2px;
+
+    transform: translateX(-50%);
+
+    background-color: $black-color;
+
+    @media screen and (min-width: $screen-md) {
+      width: 86px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: 92px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      width: 121px;
+      height: 3px;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    padding: 60px 86px 42px 75px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 67px 130px 66px 119px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin: 0 auto;
+    width: 862px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 1149px;
+    padding: 85px 130px 96px 119px;
+  }
+}
+
+.info-wrap {
+  @media screen and (min-width: $screen-sm) {
+    @include useFlex(flex, center, space-around);
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    @include useFlex(flex, center, space-evenly);
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    @include useFlex(flex, center, center);
+    gap: 70px;
+  }
+}
+
+// circle
+.eye-circle {
+  position: absolute;
+  top: -33px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 66px;
+  height: 33px;
+  border-radius: 100px 100px 0 0;
+  border-top: 2px solid $form-border;
+  border-left: 2px solid $form-border;
+  border-right: 2px solid $form-border;
+
+  @media screen and (min-width: $screen-md) {
+    top: -43px;
+
+    width: 86px;
+    height: 43px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    top: -46px;
+
+    width: 92px;
+    height: 46px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    top: -62px;
+
+    width: 124px;
+    height: 62px;
+  }
+}
+
+.eye-circle__img {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+
+  @media screen and (min-width: $screen-xs) {
+    width: 44px;
+    height: 55px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: 46px;
+    height: 58px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 50px;
+    height: 62px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 54px;
+    height: 68px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 72px;
+    height: 90px;
+  }
+}
+
+// content
+.price__currency {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: calc(16 / 16);
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-md;
+  }
+}
+
+.price__value {
+  font-weight: $lg-weight;
+  font-size: 67px;
+  line-height: calc(67 / 67);
+
+  color: $primary-color;
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: 90px;
+  }
+}
+
+.price__text {
+  margin-bottom: 24px;
+  font-size: $font-xs;
+
+  opacity: 0.8;
+
+  @media screen and (min-width: $screen-xs) {
+    margin-bottom: 34px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-md;
+  }
+}
+
+// description
+.description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 19px;
+  margin-bottom: 35px;
+
+  font-size: $font-xs;
+  text-align: left;
+
+  @media screen and (min-width: $screen-xs) {
+    gap: 23px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    margin-bottom: 42px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    gap: 27px;
+    margin-bottom: 50px;
+  }
+}
+
+.description__item {
+  display: flex;
+  gap: 16px;
+
+  font-size: 16px;
+
+  &::before {
+    content: '';
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../images/check-mark.svg');
+  }
+
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-sm;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $font-md;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-xl;
+  }
+}
+
+// conection-form
+.conection-form {
+  @media screen and (min-width: $screen-sm) {
+    @include useFlex(flex, center);
+  }
+
+  @media screen and (min-width: $screen-md) {
+    @include useFlex(flex, center, center);
+  }
+}
+
+.conection-form__label {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 400px;
+  }
+}
+
+.conection-form__input {
+  width: 100%;
+  height: 53px;
+  padding: 15px 0 15px 16px;
+
+  background-color: $secondary-color;
+  border: transparent;
+  border-radius: $base-radius;
+
+  @media screen and (min-width: $screen-sm) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    height: 56px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    height: 69px;
+  }
+}
+
+.conection-form__placeholder {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  font-size: $font-xs;
+  line-height: calc(23 / 15);
+
+  letter-spacing: 0.15px;
+  color: rgba(60, 60, 67, 0.6);
+
+  opacity: 0.9;
+
+  transform: translateY(-50%);
+  transition: transform $animation;
+
+  .conection-form__input:focus + &,
+  .conection-form__input:not(:placeholder-shown) + & {
+    transform: translateY(-250%);
+    color: $primary-color-hover;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-sm;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: 22px;
+  }
+}
+
+.conection-form__btn {
+  @extend %form-btn;
+
+  @media screen and (max-width: 767) {
+    margin-top: 16px;
+  }
+}
