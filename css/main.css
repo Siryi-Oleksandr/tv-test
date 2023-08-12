@@ -611,6 +611,47 @@ footer {
   }
 }
 
+.hero__bg {
+  background-image: url("../images/hero/bg/pic-hero-xs.png"), url("../images/hero/bg/gr-hero-xs.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center center;
+}
+@media screen and (min-width: 375px) {
+  .hero__bg {
+    background-image: url("../images/hero/bg/pic-hero-sm.png"), url("../images/hero/bg/gr-hero-sm.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__bg {
+    background-image: url("../images/hero/bg/pic-hero-md.png"), url("../images/hero/bg/gr-hero-md.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center center;
+  }
+}
+@media screen and (min-width: 990px) {
+  .hero__bg {
+    background-image: url("../images/hero/bg/pic-hero-lg.png"), url("../images/hero/bg/gr-hero-lg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__bg {
+    background-image: url("../images/hero/bg/pic-hero-xl.png"), url("../images/hero/bg/gr-hero-xl.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__bg {
+    background-image: url("../images/hero/bg/pic-hero-xl.png"), url("../images/hero/bg/gr-hero-xl.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center center;
+  }
+}
+
 .header {
   padding: 16px 0 14px;
 }
@@ -800,12 +841,12 @@ footer {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 48px 0 57px;
-    background: url("../images/hero/sm-hero@1x.png") no-repeat right 0;
+    background: url("../images/hero/sm-hero@1x.png") no-repeat 93% 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background: url("../images/hero/sm-hero@2x.png") no-repeat right 0/317px 360px;
+    background: url("../images/hero/sm-hero@2x.png") no-repeat 93% 0/317px 360px;
   }
 }
 @media screen and (min-width: 990px) {

@@ -20,10 +20,10 @@
   @media screen and (min-width: $screen-sm) {
     padding: 48px 0 57px;
 
-    background: url('../images/hero/sm-hero@1x.png') no-repeat right 0;
+    background: url('../images/hero/sm-hero@1x.png') no-repeat 93% 0;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url('../images/hero/sm-hero@2x.png') no-repeat right 0 / 317px 360px;
+      background: url('../images/hero/sm-hero@2x.png') no-repeat 93% 0 / 317px 360px;
     }
   }
 
