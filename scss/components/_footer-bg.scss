@@ -1,0 +1,28 @@
+.footer-bg {
+  background-image: url('../images/footer-bg/pic-footer-xs.png'),
+    url('../images/footer-bg/gr-footer-xs.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center bottom;
+  //   background-size: contain, cover;
+
+  @media screen and (min-width: $screen-xs) {
+    background-image: url('../images/footer-bg/pic-footer-sm.png'),
+      url('../images/footer-bg/gr-footer-sm.png');
+  }
+  @media screen and (min-width: $screen-sm) {
+    background-image: url('../images/footer-bg/pic-footer-md.png'),
+      url('../images/footer-bg/gr-footer-md.png');
+  }
+  @media screen and (min-width: $screen-md) {
+    background-image: url('../images/footer-bg/pic-footer-lg.png'),
+      url('../images/footer-bg/gr-footer-lg.png');
+  }
+  @media screen and (min-width: $screen-lg) {
+    background-image: url('../images/footer-bg/pic-footer-xl.png'),
+      url('../images/footer-bg/gr-footer-xl.png');
+  }
+  @media screen and (min-width: $screen-xl) {
+    background-image: url('../images/footer-bg/pic-footer-xl.png'),
+      url('../images/footer-bg/gr-footer-xl.png');
+  }
+}
