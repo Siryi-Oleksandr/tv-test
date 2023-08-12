@@ -1,4 +1,23 @@
 body {
-  background-color: #834949;
-  font-family: 'Inter', 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: 'Inter', 'Roboto' sans-serif;
+  font-style: normal;
+  font-weight: $sm-weight;
+  font-size: $font-sm;
+  line-height: $line-heigth-normal;
+
+  background-color: $body-bg;
+  color: $secondary-color;
+
+  min-width: 320px;
+}
+
+main {
+  flex-grow: 1;
+}
+footer {
+  flex-shrink: 0;
 }
