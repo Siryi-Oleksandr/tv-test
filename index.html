@@ -35,14 +35,14 @@
               <li class="social-media__item">
                 <a href="https://www.facebook.com/official.ottclub/" class="social-media__link">
                   <svg class="social-media__icon" width="21px" height="21px">
-                    <use href="./img/sprite.svg#facebook"></use>
+                    <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-media__item">
                 <a href="https://t.me/ottclubnews" class="social-media__link">
                   <svg class="social-media__icon" width="21px" height="21px">
-                    <use href="./img/sprite.svg#telegram"></use>
+                    <use href="./images/sprite.svg#telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -61,6 +61,420 @@
       | Main section
       |============================
     -->
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrap">
+            <h1 class="hero__title">Более 270 телеканалов в прямом эфире</h1>
+            <p class="hero__text">
+              Национальные, познавательные, детские, кино, спортивные, новостные и многие другие
+              каналы
+            </p>
+            <button type="button" class="test-btn">Протестировать 7 дней бесплатно</button>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="./images/sprite.svg#gift"></use>
+              </svg>
+              <p class="advantages__title">Бесплатный тест</p>
+              <p class="advantages__text">7 дней бесплатного тестового просмотра</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="./images/sprite.svg#devices"></use>
+              </svg>
+              <p class="advantages__title">5 устройств = 1 подписка</p>
+              <p class="advantages__text">Подключайте 5 устройств в одной подписке</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="./images/sprite.svg#tv"></use>
+              </svg>
+              <p class="advantages__title">Архив трансляций</p>
+              <p class="advantages__text">Смотрите 7 дней телеэфира в записи</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="./images/sprite.svg#earth"></use>
+              </svg>
+              <p class="advantages__title">Без привязки к месту</p>
+              <p class="advantages__text">Смотрите любимые фильмы и передачи в любой точке мира</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="conection">
+        <div class="container">
+          <div class="form-wrap">
+            <div class="info-wrap">
+              <div class="price">
+                <p class="price__currency"><span class="price__value">1€</span> / месяц</p>
+                <p class="price__text">
+                  Покупая подписку более,<br />
+                  чем на 6 месяцев
+                </p>
+              </div>
+              <ul class="description">
+                <li class="description__item">
+                  <p class="description__text">Более 270 каналов</p>
+                </li>
+                <li class="description__item">
+                  <p class="description__text">127 FullHD каналов</p>
+                </li>
+                <li class="description__item">
+                  <p class="description__text">Режим Ultra TV Sport</p>
+                </li>
+                <li class="description__item">
+                  <p class="description__text">Архив каналов</p>
+                </li>
+                <li class="description__item">
+                  <p class="description__text">5 устройств</p>
+                </li>
+              </ul>
+            </div>
+            <form class="conection-form">
+              <label class="conection-form__label">
+                <input type="email" class="conection-form__input" placeholder=" " required />
+                <span class="conection-form__placeholder">Email</span>
+              </label>
+              <button type="submit" class="conection-form__btn">Подключить тариф</button>
+            </form>
+            <div class="eye-circle">
+              <img class="eye-circle__img" src="./images/conection-form/eye.png" alt="eye" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tv-channels">
+        <div class="container">
+          <h2 class="tv-channels__title">ТВ - каналы</h2>
+          <p class="tv-channels__text">
+            Национальные, познавательные, детские, кино, спортивные, новостные и многие другие
+            телеканалы
+          </p>
+          <div class="buttons-chanel">
+            <label class="buttons-chanel__label">
+              <input
+                type="radio"
+                name="radio-group"
+                value="popular"
+                class="buttons-chanel__input"
+                checked
+              />
+              <span class="buttons-chanel__text">Популярные</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input
+                type="radio"
+                name="radio-group"
+                value="national"
+                class="buttons-chanel__input"
+              />
+
+              <span class="buttons-chanel__text">Национальные</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input
+                type="radio"
+                name="radio-group"
+                value="educational"
+                class="buttons-chanel__input"
+              />
+
+              <span class="buttons-chanel__text">Познавательные</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input type="radio" name="radio-group" value="cinema" class="buttons-chanel__input" />
+
+              <span class="buttons-chanel__text">Кино</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input type="radio" name="radio-group" value="sport" class="buttons-chanel__input" />
+
+              <span class="buttons-chanel__text">Спорт</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input type="radio" name="radio-group" value="kids" class="buttons-chanel__input" />
+
+              <span class="buttons-chanel__text">Детские</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input type="radio" name="radio-group" value="music" class="buttons-chanel__input" />
+
+              <span class="buttons-chanel__text">Музыкальные</span>
+            </label>
+
+            <label class="buttons-chanel__label">
+              <input type="radio" name="radio-group" value="news" class="buttons-chanel__input" />
+
+              <span class="buttons-chanel__text">Новостные</span>
+            </label>
+          </div>
+          <ul class="channels">
+            <li class="channels__item channels__item--red">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-one-plus-one@1x.png"
+                  alt="chanel one plus one"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--blue">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-zoom@1x.png"
+                  alt="chanel zoom hd"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--green">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-ukraine@1x.png"
+                  alt="chanel Ukraine hd"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--violet sm-visible">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-enter@1x.png"
+                  alt="chanel enter film"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--orange md-visible">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-tet@1x.png"
+                  alt="chanel tet"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--blue">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-inter@1x.png"
+                  alt="chanel inter"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--green">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-new-chanel@1x.png"
+                  alt="chanel new chanel"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--violet">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-ictv@1x.png"
+                  alt="chanel ictv"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--green sm-visible">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-m1@1x.png"
+                  alt="chanel m1"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+            <li class="channels__item channels__item--violet md-visible">
+              <a href="#" class="channels__link">
+                <img
+                  src="./images/tv-channels/xl/optimized/xl-two-plus-two@1x.png"
+                  alt="chanel two plus two"
+                  class="channels__img"
+                />
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-more">
+            Показать все
+            <svg class="btn-more__icon" width="21px" height="21px">
+              <use href="./images/sprite.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="test-using">
+        <div class="container">
+          <h2 class="test-using__title">Смотрите на разных устройствах</h2>
+          <p class="test-using__text">
+            Подключайте подписку FULL и смотрите любимые каналы на 5 устройствах, среди которых:
+            телевизор, компьютер, планшет или смартфон
+          </p>
+          <button type="button" class="test-btn">Протестировать 7 дней бесплатно</button>
+          <ul class="devices">
+            <li class="devices__item">
+              <svg class="devices__icon devices__icon--lg">
+                <use href="./images/sprite.svg#lg"></use>
+              </svg>
+            </li>
+            <li class="devices__item">
+              <svg class="devices__icon devices__icon--ios">
+                <use href="./images/sprite.svg#ios"></use>
+              </svg>
+            </li>
+            <li class="devices__item">
+              <svg class="devices__icon devices__icon--android">
+                <use href="./images/sprite.svg#android"></use>
+              </svg>
+            </li>
+            <li class="devices__item">
+              <svg class="devices__icon devices__icon--samsung">
+                <use href="./images/sprite.svg#samsung"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title">Популярные вопросы</h2>
+          <div class="faq__wrap">
+            <details class="faq__details">
+              <summary class="faq__summary">
+                <p class="faq__summary-text">Как подключить подписку OTTCLUB или продлить ее?</p>
+                <svg class="faq__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </summary>
+              <p class="faq__text">1. Установите приложение из Google Play или App Store.</p>
+              <p class="faq__text">
+                2. Авторизуйтесь в приложении, используя email, указанный при регистрации на сайте.
+              </p>
+              <p class="faq__text">3. Нажмите кнопку "Купить подписку".</p>
+              <p class="faq__text">4. Выберите подписку.</p>
+              <p class="faq__text">5. Подтвердите покупку.</p>
+            </details>
+
+            <details class="faq__details">
+              <summary class="faq__summary">
+                <p class="faq__summary-text">Как смотреть на телевизоре Samsung?</p>
+                <svg class="faq__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </summary>
+              <p class="faq__text">1. Откройте Apps на телевизоре.</p>
+              <p class="faq__text">2. В поиске введите "Ottclub".</p>
+              <p class="faq__text">
+                3. Выберите приложение с логотипом "Ottclub" из списка и установите его.
+              </p>
+              <p class="faq__text">
+                4. После установки приложения выберите "Уже есть учетная запись?" и нажмите кнопку
+                "Войти".
+              </p>
+              <p class="faq__text">5. Введите ваш e-mail, например, "user@example.com".</p>
+              <p class="faq__text">
+                6. На указанный e-mail вы получите шестизначный код, который необходимо ввести в
+                форму подтверждения и нажать кнопку "Продолжить".
+              </p>
+            </details>
+
+            <details class="faq__details">
+              <summary class="faq__summary">
+                <p class="faq__summary-text">Как смотреть одновременно на разных устройствах?</p>
+                <svg class="faq__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </summary>
+              <p class="faq__text">
+                Одновременный просмотр возможен на пяти устройствах без ограничения по адресу
+                подключения. Ознакомьтесь с инструкциями настройки в разделе "Как смотреть".
+              </p>
+            </details>
+
+            <details class="faq__details">
+              <summary class="faq__summary">
+                <p class="faq__summary-text">
+                  Как посмотреть передачу, которая была в эфире ранее?
+                </p>
+                <svg class="faq__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </summary>
+              <p class="faq__text">1. Нажмите кнопку "Ок".</p>
+              <p class="faq__text">2. Нажмите кнопку "Ок".</p>
+              <p class="faq__text">
+                3. В меню нажмите кнопку "Архив", в виде трех параллельных полос.
+              </p>
+              <p class="faq__text">
+                4. На экране появится программа телеканала и архив записанных передач.
+              </p>
+              <p class="faq__text">5. Выберите нужную передачу.</p>
+            </details>
+
+            <details class="faq__details">
+              <summary class="faq__summary">
+                <p class="faq__summary-text">
+                  Какая скорость соединения необходима для просмотра каналов?
+                </p>
+                <svg class="faq__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </summary>
+              <p class="faq__text">
+                Минимальная скорость соединения с сервером, в зависимости от разрешения канала:
+              </p>
+              <p class="faq__text">SD - 4 Мбит/с</p>
+              <p class="faq__text">HD - 6 Мбит/с</p>
+              <p class="faq__text">Full HD - 10 Мбит/с</p>
+              <p class="faq__text">Full HD - 10 Мбит/с</p>
+              <p class="faq__text">Ultra TV Sport - 15 Мбит/с</p>
+              <p class="faq__text">
+                Проверить скорость соединения с серверами можно по ссылке -
+                <a href="https://www.ottclub.tv/info/speedtest/" class="faq__link"
+                  >проверить скорость</a
+                >.
+              </p>
+            </details>
+
+            <details class="faq__details">
+              <summary class="faq__summary">
+                <p class="faq__summary-text">Как работает бесплатный тестовый период?</p>
+                <svg class="faq__icon">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </summary>
+              <p class="faq__text">
+                В тестовом режиме вы получаете полный доступ ко всем возможностям нашего ресурса:
+              </p>
+              <p class="faq__text">Каналы в SD и Full HD качестве.</p>
+              <p class="faq__text">Ultra TV Sport.</p>
+              <p class="faq__text">Просмотр на 5 устройствах.</p>
+              <p class="faq__text">Архив записей телепередач за 7 дней.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!--
       |============================
