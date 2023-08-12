@@ -1,0 +1,267 @@
+.test-using {
+  padding: 16px 0 17px;
+
+  @media screen and (min-width: $screen-xs) {
+    padding: 16px 0 17px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    padding: 26px 0 0;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 42px 0 0;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 83px 0 0;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 83px 0 9px;
+  }
+
+  // bg
+  background: url('../images/test-using/xxs-test@1x.png') no-repeat center 210px;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/test-using/xxs-test@2x.png') no-repeat center 210px / 318px 196px;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    background: url('../images/test-using/xs-test@1x.png') no-repeat center 210px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/test-using/xs-test@2x.png') no-repeat center 210px / 376px 219px;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    background: url('../images/test-using/sm-test@1x.png') no-repeat right 30px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/test-using/sm-test@2x.png') no-repeat right 30px / 306px 307px;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    background: url('../images/test-using/md-test@1x.png') no-repeat right 10px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/test-using/md-test@2x.png') no-repeat right 10px / 437px 386px;
+    }
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    background: url('../images/test-using/lg-test@1x.png') no-repeat right 60px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/test-using/lg-test@2x.png') no-repeat right 60px / 632px 386px;
+    }
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    background: url('../images/test-using/xl-test@1x.png') no-repeat right 60px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/test-using/xl-test@2x.png') no-repeat right 60px / 841px 514px;
+    }
+  }
+}
+
+.test-using__title {
+  @extend %section-title;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: 410px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 530px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 715px;
+  }
+}
+
+.test-using__text {
+  @extend %section-text;
+  margin: 16px 0 227px 0;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    margin: 18px 0 244px 0;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    margin: 24px 0 32px 0;
+    width: 410px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    margin: 24px 0 40px 0;
+    width: 480px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin: 16px 0 48px 0;
+    width: 530px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    margin: 30px 0 60px 0;
+    width: 715px;
+  }
+}
+
+// icon of devices
+.devices {
+  @include useFlex(flex, center, space-around);
+  flex-wrap: wrap;
+  padding: 12px 0;
+  margin-top: 34px;
+
+  @media screen and (max-width: 767px) {
+    gap: 29px;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    margin-top: 44px;
+    padding: 28px 0;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    margin-top: 50px;
+    padding: 48px 0;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    margin-top: 80px;
+  }
+}
+
+.devices__icon--lg {
+  width: 134px;
+  height: 24px;
+
+  @media screen and (min-width: $screen-xs) {
+    width: 170px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: 160px;
+    height: 22px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 215px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 342px;
+    height: 46px;
+  }
+}
+
+.devices__icon--ios {
+  width: 100px;
+  height: 40px;
+
+  @media screen and (min-width: $screen-xs) {
+    width: 134px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: 134px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 134px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 134px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 134px;
+    height: 24px;
+  }
+}
+
+.devices__icon--android {
+  width: 128px;
+  height: 24px;
+
+  @media screen and (min-width: $screen-xs) {
+    width: 151px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: 160px;
+    height: 26px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 175px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 215px;
+    height: 34px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 286px;
+    height: 46px;
+  }
+}
+
+.devices__icon--samsung {
+  width: 106px;
+  height: 24px;
+
+  @media screen and (min-width: $screen-xs) {
+    width: 148px;
+    height: 26px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 198px;
+    height: 34px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 215px;
+    height: 34px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 287px;
+    height: 46px;
+  }
+}
