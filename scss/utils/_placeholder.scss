@@ -175,7 +175,7 @@
     width: calc((100% - 2 * 17px) / 3);
     height: 57px;
 
-    border: 1px solid #c6c6c8;
+    border: 1px solid $border-secondary-color;
     border-radius: $base-radius;
 
     @media screen and (min-width: $screen-xs) {

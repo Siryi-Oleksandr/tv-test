@@ -1,0 +1,119 @@
+.hero {
+  padding: 16px 0;
+
+  //bg
+  background: url('../images/hero/xxs-hero@1x.png') no-repeat center 65px;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/hero/xxs-hero@2x.png') no-repeat center 65px / 320px 171px;
+  }
+
+  @media screen and (min-width: $screen-xs) {
+    padding: 24px 0;
+
+    background: url('../images/hero/xs-hero@1x.png') no-repeat center 90px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/hero/xs-hero@2x.png') no-repeat center 90px / 347px 207px;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    padding: 48px 0 57px;
+
+    background: url('../images/hero/sm-hero@1x.png') no-repeat right 0;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/hero/sm-hero@2x.png') no-repeat right 0 / 317px 360px;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 48px 0 75px;
+
+    background: url('../images/hero/md-hero@1x.png') no-repeat right -10px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/hero/md-hero@2x.png') no-repeat right -10px / 491px 426px;
+    }
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 56px 0 141px;
+
+    background: url('../images/hero/lg-hero@1x.png') no-repeat right -20px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/hero/lg-hero@2x.png') no-repeat right -20px / 746px 492px;
+    }
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 70px 0 194px;
+
+    background: url('../images/hero/xl-hero@1x.png') no-repeat right -40px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/hero/xl-hero@2x.png') no-repeat right -40px / 998px 669px;
+    }
+  }
+}
+
+.hero__wrap {
+  @media screen and (min-width: $screen-sm) {
+    width: 430px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: 465px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 530px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 715px;
+  }
+}
+
+.hero__title {
+  @extend %hero-title;
+}
+
+.hero__text {
+  font-size: $font-xs;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 195px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $screen-xs) {
+    font-size: 16px;
+    margin-top: 203px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    font-size: 17px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 34px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-sm;
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $font-md;
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-xl;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+}

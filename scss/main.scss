@@ -1,5 +1,11 @@
+@import './utils/variables';
 @import './base/reset';
 @import './base/normalize';
 @import './base/typography';
-@import './utils/variables';
+@import './utils/mixin';
+@import './utils/placeholder';
 @import './base/body';
+@import './components/container';
+@import './components/header';
+@import './components/hero';
+@import './components/advantages';
