@@ -53,7 +53,7 @@
 }
 
 .advantages__title {
-  $lg-weight: 600;
+  font-weight: $lg-weight;
   font-size: 16px;
   line-height: calc(24 / 16);
 
@@ -88,7 +88,7 @@
 
   @media screen and (min-width: $screen-lg) {
     margin-top: 12px;
-    font-size: 16;
+    font-size: 16px;
     line-height: $line-heigth-big;
   }
 
